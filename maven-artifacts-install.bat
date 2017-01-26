@@ -1,0 +1,1 @@
+call mvn -e install:install-file -Dfile=artifacts/servlet-api.jar -DartifactId=servlet-api -DgroupId=PartyServiceCustomLIB -Dversion=1.1.1 -Dpackaging=jar

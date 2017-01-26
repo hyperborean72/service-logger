@@ -1,0 +1,24 @@
+----------------------------------------------
+Service logger build and usage instructions
+----------------------------------------------
+
+1. 	Build app with servlet-api.jar located in 'artifacts' folder,
+	the same lib as the one used by the AppServer
+	Register and copy servlet-api.jar in local ${user.home}/.m2/repository by running 
+	maven-artifacts-install.bat
+	
+2. 	mvn clean package
+
+3.  copy [ServiceLogger]/target/serviceLogger-1.0.jar to:
+	- (CC services)	common/lib/soap-logger
+	- (PartyService) artifacts/taskdata.logger
+	
+4.  update project external	properties
+
+----------------------------------------------
+
+A. 'loggingControl' admin method accepts boolean value for the 'loggingSwitch' to suspend/resume logging
+
+B. 'changeProperty' accepts two new parameters:
+    'dynamic-response-body-size' specifies response body size in char (ENTRY_BODY column in 'T_REQUEST_LOG' where ENTRY_TYPE=OUT)
+	'dynamic-partition-size' is the maximum queue segment size for a single batch write
