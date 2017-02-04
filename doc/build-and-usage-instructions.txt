@@ -7,7 +7,7 @@ Service logger build and usage instructions
 	Register and copy servlet-api.jar in local ${user.home}/.m2/repository by running 
 	maven-artifacts-install.bat
 
-	[Note: in case you have no oracle jdbc driver, ibstall it from artifacts the similar way]
+	Note: in case you have no oracle jdbc driver, ibstall it from artifacts the similar way
 	
 2. 	mvn clean package
 
