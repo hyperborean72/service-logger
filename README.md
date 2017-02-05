@@ -1,7 +1,7 @@
 The project for the TaskData, St Petersburg, former employer
  
 The purpose of the ServiceLogger is to provide detailed information during SOAP service-based client-server interaction
-in environment where several SOAP services are run on the server located on several nodes and consumed from any IP on the web.
+in environment with multiple SOAP services run on the server located on several nodes and consumed from any IP on the web.
 It is implemented as Spring component (of service type) that implements javax.xml.ws.handler.soap.SOAPHandler and extracts detailed information from SOAP context and request headers like IP address and SSO of the person that sent request, 
 SOAP service and web method names, request body and status etc
 
